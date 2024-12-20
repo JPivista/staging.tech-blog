@@ -43,7 +43,7 @@ const PostLandingPage = () => {
                             </div>
                         </div>
 
-                        <div className="mt-6 flex flex-col justify-center items-center">
+                        <div className="mt-6 lg:flex flex-col justify-center items-center hidden ">
                             <div className="lg:w-[80%] w-full rounded-lg h-[300px] object-cover">
                                 {post.advertisementImage && post.advertisementImage.trim() !== "" ? (
                                     <img
