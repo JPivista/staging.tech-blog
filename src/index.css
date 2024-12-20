@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.txt-lime {
+    color: #B5D44C;
+}
+
+.bg-lime {
+    background: #B5D44C;
+}

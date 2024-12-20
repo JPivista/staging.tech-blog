@@ -14,7 +14,7 @@ const Header = () => {
         { name: "Business", path: "/business" },
         { name: "Cinema", path: "/cinema" },
         { name: "Sports", path: "/sports" },
-        { name: "Games (or) Gaming", path: "/gaming" },
+        { name: "Gaming", path: "/gaming" },
         { name: "Healthcare", path: "/healthcare" },
         { name: "General Topics", path: "/general-topics" },
     ];
@@ -48,10 +48,10 @@ const Header = () => {
         <header
             className={`sticky top-0 z-30 py-4 transition duration-300 ${isScrolled ? "bg-white/80 backdrop-blur-lg shadow-md" : "bg-transparent"}`}
         >
-            <div className="mx-auto flex max-w-7xl items-center justify-between px-6">
+            <div className="mx-auto flex max-w-7xl items-center justify-between px-6 ">
                 {/* Logo */}
-                <Link to="/">
-                    <div className="text-xl font-bold text-indigo-600">DevBlog</div>
+                <Link to="/" className="bg-white px-4 p-2 rounded-md shadow-md shadow-[#B5D44C]">
+                    <div className="text-xl font-bold text-[#444]">Techy <span className="text-lime-500">Blog</span></div>
                 </Link>
 
                 {/* Desktop Navigation */}
@@ -61,7 +61,7 @@ const Header = () => {
                             key={link.path}
                             to={link.path}
                             className={`transition-colors duration-300 ${location.pathname === link.path
-                                ? "text-indigo-600 font-bold"
+                                ? "text-black font-bold"
                                 : "text-gray-600 hover:text-indigo-600"
                                 }`}
                         >

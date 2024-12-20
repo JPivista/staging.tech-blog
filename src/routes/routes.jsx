@@ -5,6 +5,7 @@ import MainLayout from '../Layout/MainLayout';
 import HomePage from '../pages/HomePage'
 import AboutUs from '../pages/AboutUs'
 import NotFound from '../pages/NotFound';
+import PostLandingPage from '../LandingPage/PostLandingPage';
 
 const AppRoutes = () => {
     let routes = useRoutes([
@@ -14,6 +15,7 @@ const AppRoutes = () => {
             children: [
                 { path: "/", element: <HomePage /> },
                 { path: "/about-us", element: <AboutUs /> },
+                { path: "/posts/:postId", element: <PostLandingPage /> },
                 { path: "*", element: <NotFound />, },
             ]
         }
